@@ -31,6 +31,6 @@ possible HTML structure. So pretty much cut and paste, but you could certainly
 build your own structure 
  
 Basic Use:
-$('#credit_card_input_field').creditCardTypeDetector('#card_logos_ele');
+$('#credit_card_input_field').creditCardTypeDetector({ 'credit_card_logos_id' : '#card_logos_ele' });
 
 Default requires no arguments, but looks for the logos to have the class .card_logos
