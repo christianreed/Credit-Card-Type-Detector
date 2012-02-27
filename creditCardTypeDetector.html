@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="creditCardTypeDetector.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.creditCardTypeDetector.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#checkout_card_number').creditCardTypeDetector({ 'credit_card_logos' : '.card_logos' });
+		});
+	</script>
+</head>
+
+<body>
+<input id="checkout_card_number" type="text" size="20" pattern="[0-9]*" autocomplete="off" class="stripe_card_number" required="required" />
+
+<ul class="card_logos">
+	<li class="card_visa">Visa</li>
+	<li class="card_mastercard">Mastercard</li>
+	<li class="card_amex">American Express</li>
+	<li class="card_discover">Discover</li>
+	<li class="card_jcb">JCB</li>
+	<li class="card_diners">Diners Club</li>
+</ul>
+</body>
+</html>
